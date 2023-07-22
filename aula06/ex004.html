@@ -7,19 +7,44 @@
 
     <style>
         body {
-            font: normal 2rem roboto;
+            font: normal 1rem roboto;
         }
     </style>
 </head>
 <body>
+
+    <h1>Operadores &#40;Parte 1&#41;</h1>
     
     <script>
-        var nome = window.prompt('Qual é o seu nome?')
+        let n1 = Number(prompt('Digite um número: '))
+        let n2 = Number(prompt('Digite outro número: '))
+        
+        let calc1 = n1 + n2
+        let calc2 = n1 - n2
+        let calc3 = n1 * n2
+        let calc4 = n1 / n2
+        let calc5 = n1 ** n2
+        let calc6 = n1 % n2
 
-        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`)
-        document.write(`Seu nome em letras maiúsculas fica:  ${nome.toUpperCase()}<br>`)
+        document.write(`A soma entre ${n1} e ${n2} é: ${calc1}<br>`);
 
-        document.write(`seu nome em letras minúsculas ficas: ${nome.toLowerCase()}`)
+        document.write(`A subtração entre ${n1} e ${n2} é: ${calc2}\n`);
+
+        document.write("A multiplicação entre " + n1 + " e " + n2 + " é: " + calc3 + "<br>");
+
+        document.write(`A divisão de ${n1} por ${n2} é: ${calc4}<br>`);
+
+        document.write(`A porcentagem de ${n1} e ${n2} é: ${calc5}<br>`)
+
+        document.write(`O resto da divisão de ${n1} e ${n2} é: ${calc5}`)
+
+
+        // var nome = window.prompt('Qual é o seu nome?')
+
+        // document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`)
+        // document.write(`Seu nome em letras maiúsculas fica:  ${nome.toUpperCase()}<br>`)
+
+        // document.write(`seu nome em letras minúsculas ficas: ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
