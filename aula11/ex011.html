@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DETRAN</title>
+  </head>
+  <body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" /> Km/h
+    <input type="button" value="Verificar" id="button" />
+    <div id="resultado"></div>
+
+    <script>
+      let velocidade = document.getElementById("txtvel");
+      let resultado = document.getElementById("resultado");
+      let button = document.getElementById("button");
+      button.addEventListener("click", verificar);
+
+      function verificar() {
+        if (velocidade.value > 50) {
+          resultado.innerHTML = `Você ultrapassou o limite permitido. <strong>MULTADO!</strong>`;
+        } else {
+          resultado.innerText = "Tudo normal!";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font: normal 16px Arial;
+      }
+
+      body {
+        background-color: rgba(6, 6, 231, 0.533);
+      }
+
+      section {
+        background-color: white;
+        border-radius: 3%;
+        box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.437);
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 10px;
+      }
+
+      section h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      section div {
+        margin-top: 15px;
+      }
+
+      section div.caixa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+      }
+
+      section input#name {
+        width: 50%;
+        margin-top: 10px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      label {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Sistema de Nacionalidade</h1>
+
+      <label for="name">
+        <span>Digite seu nome:</span>
+      </label>
+      <input type="text" name="name" id="name" />
+
+      <div>
+        <label for="nacionalidade">
+          <span>Em qual local você mora?</span>
+        </label>
+
+        <div class="caixa">
+          <div>
+            <input type="radio" name="brasil" id="brasil" />
+            <label for="brasil">Brasil</label>
+          </div>
+
+          <div>
+            <input type="radio" name="foraDoBrasil" id="foraDoBrasil" />
+            <label for="foraDoBrasil">Fora do Brasil</label>
+          </div>
+        </div>
+      </div>
+
+      <input type="button" value="Consultar" onclick="consultar()" />
+
+      <div id="resultado"></div>
+
+      <script>
+        function consultar() {
+          let nome = document.getElementById("name");
+          let br = document.getElementById("brasil");
+          let estrangeiro = document.getElementById("foraDoBrasil");
+          let resultado = document.getElementById("resultado");
+
+          resultado.innerHTML = `Olá, ${nome.value}!`;
+
+          if (br.checked) {
+            resultado.innerHTML += `<p>Você é <strong>Brasileiro(a)!</strong></p>`;
+          } else {
+            resultado.innerHTML += `<p>Você é <strong>Estrangeiro(a)</strong></p>`;
+          }
+        }
+      </script>
+    </section>
+  </body>
+</html>
