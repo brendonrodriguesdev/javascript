@@ -29,7 +29,7 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.375);
 }
 
-section div#hora {
+section div#msg {
     text-align: center;
     margin-top: 10px;
     font-size: 1.7rem;
