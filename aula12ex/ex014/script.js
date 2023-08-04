@@ -6,7 +6,7 @@ function carregar () {
     let minutos = data.getMinutes();
     let segundos = data.getSeconds();
 
-    mensagem.innerText = `Agora são exatamente ${hora}:${minutos}:${segundos}h`;
+    mensagem.innerText = `Agora são exatamente ${hora}:${minutos}:${segundos}`;
 
     if (hora >= 0 && hora < 12) {
         //bom dia
