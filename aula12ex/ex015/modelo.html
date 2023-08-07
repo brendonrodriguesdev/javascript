@@ -8,21 +8,35 @@
 </head>
 <body>
     <header>
-        Título
+        Verificador de Idade
     </header>
 
     <section>
-        <div>
-            Testando...
+        <div class="caixa">
+            Ano de Nascimento: <input type="number" name="anoNasc" id="anoNasc">
         </div>
 
-        <div>
-           
+        <div class="caixa">
+           Sexo: 
+           <input type="radio" name="sexo" id="masculino">
+           <label for="masculino">Masculino</label>
+
+           <input type="radio" name="sexo" id="feminino"><label for="feminino">Feminino</label>
+        </div>
+
+        <input id="button" type="button" value="Verificar" onclick="verificarIdade()">
+
+        <div id="resultado">
+
         </div>
     </section>
 
     <footer>
-        <p>&copyCursoemVídeo</p>
+        <p>
+            <a href="github.com/brendonrodriguesdev" target="_blank">
+                &copyBrendonrodriguesdev
+            </a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
