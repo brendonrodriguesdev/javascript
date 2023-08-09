@@ -1,72 +1,67 @@
 /* Mobile first */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(115, 71, 160);
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  background-image: linear-gradient(90deg, #2563eb, #4f46e5);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 header {
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
-    margin: 20px 0;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
 }
 
 section {
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.375);
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.375);
 }
 
 section div {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .caixas {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 #button {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
 }
 
 /* Tablet */
 @media (min-width: 670px) {
-    body {
-        background-color: rgb(4, 93, 118);
-    }
+  section {
+    width: 70%;
+    transition: 0.5s;
+  }
 }
 
 /* Telas grandes */
 @media (min-width: 950px) {
-    body {
-        background-image: linear-gradient(rgb(115, 71, 160), rgb(4, 93, 118));
-        background-repeat: no-repeat;
-    }
-
-    section {
-        width: 65%;
-        transition: width .3s, height .3s;
-        transition-timing-function: ease;
-    }
+  section {
+    width: 50%;
+    transition: .5s
+  }
 }
 
 /* body {
