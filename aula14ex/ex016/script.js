@@ -3,23 +3,30 @@ function countNumbers() {
     let finNumber = document.getElementById("finalNumber");
     let step = document.getElementById('step');
     let res = document.getElementById('result');
-    // console.log({
-    //     iniNumber: iniNumber.value,
-    //     finNumber: finNumber.value,
-    //     step: step.value
-    // })
-    if (iniNumber.value == 0 || finNumber.value == 0 || step.value == 0) {
-        res.innerHTML = `Impossível contar!`
-    } else {
-        let iNumber = Number(iniNumber.value);
-        let fNumber = Number(finNumber.value);
-        let nStep = Number(step.value);
-        let finText = ''
-        while(iNumber <= fNumber) {
-            finText = finText + iNumber + ''
-            iNumber += nStep
-        }
 
-        res.innerHTML = `Passo ${finText}`;
+    let iNumber = Number(iniNumber.value);
+    let fNumber = Number(finNumber.value);
+    let nStep = Number(step.value);
+
+    if(iNumber.length === 0 || fNumber.length === 0){
+        res.innerHTML = `<p>Impossível contar!</p>`
+    } else {
+        if(nStep.length === 0) {
+            alert('Passo igual a 0. Será considerado como 1');
+            nStep = 1
+        } 
+
+        res.innerHTML = `<p>Segue a sequência abaixo...</p>`
+        if (iNumber < fNumber) {
+            for (let i = iNumber; i <= fNumber; i += nStep) {
+                res.innerHTML += ` ${i}&#128073`
+            }
+        } else {
+            for (let i = iNumber; i >= fNumber; i -= nStep) {
+                res.innerHTML += ` ${i}&#128073`
+            }
+        }
+        
+        res.innerHTML += '\u{1F3C1}';
     }
 }
