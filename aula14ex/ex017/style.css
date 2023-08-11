@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(115, 71, 160);
+    background-image: linear-gradient(90deg, #2563eb, #4f46e5);
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -29,6 +29,17 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.375);
 }
 
+section div select {
+    width: 200px;
+    height: 100%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+div#result {
+    margin-top: 10px;
+}
+
 section div {
     font-size: 1.3rem;
 }
@@ -42,22 +53,17 @@ footer {
 
 /* Tablet */
 @media (min-width: 670px) {
-    body {
-        background-color: rgb(4, 93, 118);
+    section {
+        transition: 0.3s;
+        width: 70%;
     }
 }
 
 /* Telas grandes */
 @media (min-width: 950px) {
-    body {
-        background-image: linear-gradient(rgb(115, 71, 160), rgb(4, 93, 118));
-        background-repeat: no-repeat;
-    }
-
     section {
-        width: 65%;
-        transition: width .3s, height .3s;
-        transition-timing-function: ease;
+        width: 50%;
+        transition: 0.3s
     }
 }
 

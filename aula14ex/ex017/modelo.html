@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        Título
+        Tabuáda
     </header>
 
     <section>
         <div>
-            Testando...
+            <label for="num">Número:</label> <input type="number" name="number" id="num">
+            <input type="button" value="Gerar Tabuada" onclick="generateTable()">
         </div>
 
-        <div>
-           
+        <div id="result">
+           <select name="tabuada" id="table">
+            <option value="Digite um número acima">Digite um número acima</option>
+           </select>
         </div>
     </section>
 
