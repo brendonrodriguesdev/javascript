@@ -18,8 +18,9 @@ function add() {
     let inpNumber = Number(inputNumber.value);
     item.text = `Valor ${inpNumber} adicionado.`;
     select.appendChild(item);
-    return list.push(inpNumber);
-  }
+    list.push(inpNumber);
+  };
+  
 }
 
 function finalize() {
