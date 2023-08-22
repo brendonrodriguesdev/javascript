@@ -40,18 +40,18 @@ function finalize() {
 
     //menor valor
     let lowerValue = list[0];
-    for ( let i = 1; i < list.length; i--) {
+    for ( let i = 1; i < list.length; i++) {
       if (list[i] < lowerValue) {
         lowerValue = list[i];
       };
     };
 
+    //soma
     let sum = 0
     for (let i = 0; i < list.length; i++) {
-      sum += valores[i];
+      sum += list[i];
     };
-
-    let media = soma / list.length;
+    let media = sum / list.length;
 
     paragraph.innerHTML += `O maior valor informado foi ${bigValue} </br>`;
 
