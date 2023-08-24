@@ -3,11 +3,11 @@ Criado para estudos de javascript pelo curso em vídeo
 
 |Aulas/Exercícios|Desafios|
 |-|-|
-|[Aula 04](./aula04/ex001.html)||
-|[Aula 06a](./aula06/ex002.html)||
-|[Aula 06b](./aula06/ex003.html)||
-|[Aula 06c](./aula06/ex004.html)||
-|[Aula 06d](./aula06/ex005.html)||
+|[Aula 04](./aula04/ex001.html)|[Desafio 01](./Desafios/desafio01/desafio01.html)|
+|[Aula 06a](./aula06/ex002.html)|[Desafio 02](./Desafios/desafio02/desafio02.html)|
+|[Aula 06b](./aula06/ex003.html)|[Desafio 03](./Desafios/desafio03/desafio03.html)|
+|[Aula 06c](./aula06/ex004.html)|[Desafio 04](./Desafios/desafio04/desafio04.html)|
+|[Aula 06d](./aula06/ex005.html)|[Desafio 05](./Desafios/desafio05/desafio05.html)|
 |[Aula 06e](./aula06/exTESTE.html)||
 |[Aula 10a](./aula10/ex006.html)||
 |[Aula 10b](./aula10/ex007.html)||

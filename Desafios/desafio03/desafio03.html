@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+
+        input {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- DESAFIO 3
+        Crie uma interface com um título e um botão. Quando o usuário clicar no botão aparecerá uma caixa solicitando a digitação de um número inteiro qualquer. Depois, mostre o número antecessor e o sucessor desse número -->
+
+    <h1>Antes e Depois</h1>
+
+    <input type="button" value="Antes e Depois" onclick="beforeAfter()">
+
+    <script>
+        function beforeAfter() {
+            let number = prompt('Digite um número inteiro qualquer');
+
+            // let predecessor = Math.floor(number);
+            // let successor = Math.ceil(number);
+
+            // alert(`O antecessor de ${number} é ${predecessor}, e o sucessor de ${number} é ${successor}.`);
+
+            let antecessor = Number(number) - 1;
+            let sucessor = Number(number) + 1;
+
+            alert(`O antecessor de ${number} é ${antecessor}, e o sucessor de ${number} é ${sucessor}.`);
+        };
+    </script>
+</body>
+</html>

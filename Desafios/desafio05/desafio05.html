@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        input {
+            padding: 10px;
+        }
+        div#res {
+            
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- DESAIFO 05
+    Crie uma interface com um título, um botão e uma sessão de saída.Quando o usário clicar no botão aparecerá uma caixa solicitando a digitação de uma distância, em metros (m). Faça um programa em JS que converta essa ditância em metros para as demais medidas múltiplas do metro: (Km, Hm, Dam, dm, cm e mm). O resultado deverá aparecer dentro da própria página, dentro da sessão que está logo abaixo do botão. -->
+    <h1>Conversor de Medidas</h1>
+
+    <input type="button" value="converter" onclick="toConvert()">
+
+    <div id="res">
+        Clique no botão acima para iniciar.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
