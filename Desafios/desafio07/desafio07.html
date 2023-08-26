@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <style>
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- DESAFIO 07
+    Antes do usuário visualizar a tela principal, solicite ao visitante que informe a contação do dólar do dia atual, por meio do prompt. Depois de informado, ele terá que visualizar a página com um títtulo, um botão e uma sessão de saída. Quando o usuário clicar no botão, aparecerá uma caixa perguntando quantos R$ a pessoa tem na carteira. Faça um programa em JavaScript que consiga dizer quantos dólares o visitante vai conseguir comprar com os reais que tem na carteira, considerando a cotação informada lá na primeira tela. O resultado deverá aparecer na própria página, dentro da seção que está logo abaixo do botão. -->
+
+    <h1>Conversor R$ &rarr; US$</h1>
+
+    <input type="button" value="Converter" onclick="toConvert()">
+
+    <div id="res">
+        Clique no botão acima para iniciar...
+    </div>
+
+    <script>
+        let currentDollar = prompt('Antes de mais nada, quanto está a cotação do dólar agora?');
+
+        function toConvert() {
+            let myMoney = prompt('Quantos R$ você tem na carteira?');
+            let result = document.getElementById('res');
+            let payDollar = Number(myMoney) / Number(currentDollar);
+
+            result.innerHTML = `Com R$${myMoney}, você consegue comprar, aproximadamente, US$${payDollar.toFixed(2)}`
+        };
+    </script>
+</body>
+</html>
