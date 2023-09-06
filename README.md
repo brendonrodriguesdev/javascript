@@ -13,8 +13,8 @@ Criado para estudos de javascript pelo curso em vídeo
 |[Aula 10b](./aula10/ex007.html)|[DEsafio 08](./Desafios/desafio08/desafio08.html)|
 |[Aula 11a](./aula11/ex008.js)|[Desafio 09](./Desafios/desafio09/desafio09.html)|
 |[Aula 11b](./aula11/ex009.js)|[Desafio 10](./Desafios/desafio10/desafio10.html)|
-|[Aula 11c](./aula11/ex011.html)||
-|[Aula 11d](./aula11/exTESTE.html)||
+|[Aula 11c](./aula11/ex011.html)|[Desafio 11](./Desafios/desafio11/desafio11.html)|
+|[Aula 11d](./aula11/exTESTE.html)|[Desafio 12](./Desafios/desafio12/desafio12.html)|
 |[Aula 12a](./aula12/ex011.js)||
 |[Aula 12b](./aula12/ex012.js)||
 |[Aula 12c](./aula12/ex013.js)||
